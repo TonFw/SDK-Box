@@ -9,7 +9,8 @@ SDK de desenvolvimento de WebApps em HTML, CSS e JS com AngularJS conectado a AP
 
 * JavaScript
   * [AngularJS](http://angularjs.org/)
-  * <del>[jQuery](http://jquery.com/)</del> (Evitar usar, estamos eliminando esta dependência)
+  * [Bootstrap](http://getbootstrap.com/2.3.2/javascript.html) (jQuery Plugin)
+  * <del>[jQuery](http://jquery.com/)</del> (Este será usado apenas para alimentar o Bootstrap)
 
 * Icon Fonts
   * [Foundation Icon 3](http://zurb.com/playground/foundation-icon-fonts-3)
