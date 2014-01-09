@@ -28,16 +28,42 @@ SDK p/ desenvolvimento de WebApps __HTML5__, __CSS3__ e __JS (AngularJS)__ conec
 1- Não utilizarás Width setado na mão e nem CSS inline:
 
 ```
-  <div class="span3">
-   <span></span>
-  </div>
+ERRADO
+div {
+ width: 2px;
+}
+
+
+MEU OLHOS SANGRAM
+<div style="width: 100%">
+```
+
+
+```
+MEUS OLHOS BRILHAM
+<div class="span3">
+ <span></span>
+</div>
 ```
 
 2- Sempre removerás margins dos Spans usarando Row, p/ elementos na mesma linha:
 
 ```
+ERRADO
+#funcionalidade div {
+ margin: 0;
+}
+
+MEU OLHOS SANGRAM
+div {
+ margin: 0;
+}
+```
+
+```
+Meus olhos brilham
 <div class="container">
- <div class="row">
+ <div id="funcionalidade" class="row">
     <div class="span6"></div>
     <div class="span6"></div>
  </div>
@@ -47,15 +73,27 @@ SDK p/ desenvolvimento de WebApps __HTML5__, __CSS3__ e __JS (AngularJS)__ conec
 3- Sempre selecionarás o elemento para estilo acoplando-o a seu elemento pai:
 
 ```
-  HTML
-  <div id="elemento_pai">
-   <span></span>
-  </div>
-  
-  CSS
-  #elemento_pai span{
-   /* code */
-  }
+ERRADO
+#funcionalidade div {
+ /* estilo */
+}
+
+MEU OLHOS SANGRAM
+div {
+ /* estilo */
+}
+```
+
+```
+MEUS OLHOS BRILHAM
+<div id="elemento_pai">
+ <span class="elemento_funcional"></span>
+</div>
+
+CSS
+#elemento_pai span.elemento_funcional {
+ /* estilo */
+}
 ```
 
 ####### Mandamentos HTML
@@ -93,7 +131,7 @@ SDK p/ desenvolvimento de WebApps __HTML5__, __CSS3__ e __JS (AngularJS)__ conec
   var xpto = 'BAD SMELL';
   
   SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
-   var xptolas_loucas = 'Heaven Semll';
+   var xptolas_loucas = 'GOD LIKE';
   });
 ```
 
