@@ -256,7 +256,7 @@ SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
 ### CSS
 --------
 Work Flow:
-* Cria a pasta com o nome da funcionalidade/elemento a ser desenvolvida(o)
+* Cria a pasta com o nome da funcionalidade/elemento a ser desenvolvida(o), dentro da pasta assets/css/SDK 
 * Cria style_geral.css, dentro do pasta que, importa os outros CSS deste dado elemento/funcionaliade
 
 ```
