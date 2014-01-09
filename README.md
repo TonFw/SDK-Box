@@ -122,15 +122,34 @@ MEUS OLHOS BRILHAM
 5- Sempre criará seu AngularJS Controller no arquivo de mesmo nome e setá-lo na div mãe da funcionalidade:
 
 ```
-  editor_cor_letra.js
-  
-  SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
+ERRADO
+editor_cor_letra.js
+
+SDK-Box_App.controller('editor_cor_letra', function($scope, $http){
    // Code
-  });
-  
-  <div ng-controller="EditorCorLetra">
-   <!-- MarkUp da funcionalidade aqui -->
-  </div>
+});
+
+MEUS OLHOS SANGRAM
+EditorCorLetra.js
+
+SDK-Box_App.controller('Editor_Cor_Letra', function($scope, $http){
+   // Code
+});
+
+<body ng-controller="EditorCorLetra">
+```
+
+```
+MEUS OLHOS BRILHAM
+editor_cor_letra.js
+
+SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
+ // Code
+});
+
+<div ng-controller="EditorCorLetra">
+ <!-- MarkUp da funcionalidade aqui -->
+</div>
 ```
 
 6- Encapsularás suas variáveis dentro de seu Controllers e/ou Models <del> __var global__ </del>:
