@@ -31,7 +31,9 @@
         <h1>
 <a name="sdk-box" class="anchor" href="#sdk-box"><span class="octicon octicon-link"></span></a>SDK-Box</h1>
 
-<p>SDK p/ desenvolvimento de WebApps <strong>HTML5</strong>, <strong>CSS3</strong> e <strong>JS (AngularJS)</strong> conectado a <strong>APIs</strong> fornecedoras de dados.</p>
+<p>IDE criada para desenvolvimento rápido e fácil direto do Browser (<strong>Safari</strong>, <strong>Chrome</strong> ou <strong>FireFox</strong>), com interfaces de fácil manipulação para criação de Addons/Plugins e também de comunicação com <strong>APIs</strong> (<strong>GitHub</strong>, <strong>Gravatar</strong>, <strong>Twitter</strong>, <strong>Facebook</strong>).</p>
+
+<p>Resumo: IDE de propósito geral que permite fácil criação de plugin e addon e que roda em browsers, que permitam App, e que tem uma fácil interface de comunicação com APIs o que o torna também um SDK.</p>
 
 <h2>
 <a name="frameworks" class="anchor" href="#frameworks"><span class="octicon octicon-link"></span></a>Frameworks</h2>
@@ -232,11 +234,12 @@ SDKApp.controller('Editor_Cor_Letra', function($scope, $http){
 </code></pre>
 
 <pre><code>MEUS OLHOS BRILHAM
+--&gt; Aqui pode ser usado o sufixo Controller ou simplesmente Ctrl, qualquer já ajuda
 editor_cor_letra.js
-SDKApp.controller('EditorCorLetra', function($scope, $http){
+SDKApp.controller('EditorCorLetraController', function($scope, $http){
  // Code
 });
-&lt;div ng-controller="EditorCorLetra"&gt;
+&lt;div ng-controller="EditorCorLetraController"&gt;
  &lt;!-- MarkUp da funcionalidade aqui --&gt;
 &lt;/div&gt;
 </code></pre>
