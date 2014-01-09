@@ -18,7 +18,7 @@ SDK p/ desenvolvimento de WebApps __HTML5__, __CSS3__ e __JS (AngularJS)__ conec
   * [Ico moon](http://icomoon.io/)
   * <del>[Fontello](http://fontello.com/)</del> (Não recomendável utilizar mais icones deste)
 
-
+<br><br>
 ## Padrões de codificação do SDK
 
 ##### Os 10 mandamentos
