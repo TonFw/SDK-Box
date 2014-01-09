@@ -25,7 +25,7 @@ SDK p/ desenvolvimento de WebApps __HTML5__, __CSS3__ e __JS (AngularJS)__ conec
 
 ####### Mandamentos CSS
 
-1- Não utilizarás Width setado na mão e nem CSS inline:
+1- Width __somente__ com contagem de colunas (__Spans__), sem setagem HardCoded (CSS inline):
 
 ```
 ERRADO
@@ -96,7 +96,7 @@ MEUS OLHOS BRILHAM
 
 ####### Mandamentos HTML
 
-4- Uso as Tags pelo nome até o ponto que for possível
+4- Usarás as Tags pelo nome até o ponto que for possível
 
 ```
 ERRADO
@@ -120,9 +120,42 @@ MEUS OLHOS BRILHAM
 <article></article>
 ```
 
-5- 
+5- Não utilizarás atributos das tags para manipular estilo
 
-6-
+```
+ERRADO && SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
+<div bgcolor="black"></div>
+```
+
+```
+MEUS OLHOS BRILHAM
+div.foo {
+ background: black;
+}
+
+<div class="foo"></div>
+```
+
+6- Respeitarás as hierarquias entre as tags
+
+```
+ERRADO && SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
+<h2> 
+ <h1></h1> 
+</h2>
+
+SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
+<span>
+ <div></div>
+</span>
+```
+
+```
+MEUS OLHOS BRILHAM
+<div>
+ <span></span>
+</div>
+```
 
 
 ####### Mandamentos JS
