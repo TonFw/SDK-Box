@@ -96,11 +96,16 @@ MEUS OLHOS BRILHAM
 
 ####### Mandamentos HTML
 
+4-
+
+5-
+
+6-
 
 
 ####### Mandamentos JS
 
-4- Manipularás o estilo dinamicamente __sem__ uso do jQuery:
+7- Manipularás o estilo dinamicamente __sem__ uso do jQuery:
 
 ```
 ERRADO
@@ -118,7 +123,7 @@ MEUS OLHOS BRILHAM
 <span class="elemento {{ val }}">  </span>
 ```
 
-5- Sempre criará seu AngularJS Controller no arquivo de mesmo nome e setá-lo na div mãe da funcionalidade:
+8- Sempre criará seu AngularJS Controller no arquivo de mesmo nome e setá-lo na div mãe da funcionalidade:
 
 ```
 ERRADO
@@ -146,7 +151,7 @@ SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
 </div>
 ```
 
-6- Encapsularás suas variáveis dentro de seu Controllers e/ou Models <del> __var global__ </del>:
+9- Encapsularás suas variáveis dentro de seu Controllers e/ou Models <del> __var global__ </del>:
 
 ```
 ERRADO
@@ -166,7 +171,7 @@ SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
 });
 ```
 
-7- Funções adicionadas ao escopo serão nome1_nome2 e modelos serão CamelCase:
+10- Funções adicionadas ao escopo serão nome1_nome2 e modelos serão CamelCase:
 
 ```
 ERRADO
