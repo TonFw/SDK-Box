@@ -1,4 +1,4 @@
-PrSDK
+SDK-Box
 =====
 SDK de desenvolvimento de WebApps em __HTML__, __CSS__ e __JS__ com __AngularJS__ conectado a __APIs__ fornecedoras de dados.
 
