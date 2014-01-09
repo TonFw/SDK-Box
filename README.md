@@ -96,9 +96,31 @@ MEUS OLHOS BRILHAM
 
 ####### Mandamentos HTML
 
-4-
+4- Uso as Tags pelo nome até o ponto que for possível
 
-5-
+```
+ERRADO
+<div class="header">
+ <div class="nav"></div>
+</div>
+<div class="artigo"></div>
+
+SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
+<div id="header"></div>
+<div id="nav"></div>
+<div id="artigo"></div>
+```
+
+
+```
+MEUS OLHOS BRILHAM
+<header>
+ <nav></nav>
+</header>
+<article></article>
+```
+
+5- 
 
 6-
 
