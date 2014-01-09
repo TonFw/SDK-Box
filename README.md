@@ -25,7 +25,7 @@ SDK de desenvolvimento de WebApps em __HTML__, __CSS__ e __JS__ com __AngularJS_
 
 ####### Mandamentos CSS
 
-1. Não utilizarás Width setado na mão e nem CSS inline:
+1- Não utilizarás Width setado na mão e nem CSS inline:
 
 ```
   <div class="span3">
@@ -33,7 +33,7 @@ SDK de desenvolvimento de WebApps em __HTML__, __CSS__ e __JS__ com __AngularJS_
   </div>
 ```
 
-2. Sempre removerás margins dos Spans usarando Row, p/ elementos na mesma linha:
+2- Sempre removerás margins dos Spans usarando Row, p/ elementos na mesma linha:
 
 ```
 <div class="container">
@@ -44,7 +44,7 @@ SDK de desenvolvimento de WebApps em __HTML__, __CSS__ e __JS__ com __AngularJS_
 </div>
 ```
 
-3. Sempre selecionarás o elemento para estilo acoplando-o a seu elemento pai:
+3- Sempre selecionarás o elemento para estilo acoplando-o a seu elemento pai:
 
 ```
   HTML
@@ -60,7 +60,11 @@ SDK de desenvolvimento de WebApps em __HTML__, __CSS__ e __JS__ com __AngularJS_
 
 ####### Mandamentos HTML
 
-1. Manipularás o estilo dinamicamente sem uso do jQuery:
+
+
+####### Mandamentos JS
+
+4- Manipularás o estilo dinamicamente __sem__ uso do jQuery:
 
 ```
   HTML
@@ -69,17 +73,29 @@ SDK de desenvolvimento de WebApps em __HTML__, __CSS__ e __JS__ com __AngularJS_
   </div>
 ```
 
-2. Sempre criará seu AngularJS Controller no arquivo de mesmo nome:
+5- Sempre criará seu AngularJS Controller no arquivo de mesmo nome e setá-lo na div mãe da funcionalidade:
 
 ```
+  editor_cor_letra.js
   
-  <div class="{{ estilo.estado }}">
-   <span></span>
+  SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
+   // Code
+  });
+  
+  <div ng-controller="EditorCorLetra">
+   <!-- MarkUp da funcionalidade aqui -->
   </div>
 ```
 
+6- Encapsularás suas variáveis dentro de seu Controllers e/ou Models <del> __var global__ </del>:
 
-3. 
+```
+  var xpto = 'BAD SMELL';
+  
+  SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
+   var xptolas_loucas = 'Heaven Semll';
+  });
+```
 
 ### CSS
 --------
