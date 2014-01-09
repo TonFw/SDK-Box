@@ -132,7 +132,7 @@ EditorCorLetra.js
 SDK-Box_App.controller('Editor_Cor_Letra', function($scope, $http){
    // Code
 });
-<body ng-controller="EditorCorLetra">
+<body ng-controller="Editor_Cor_Letra">
 ```
 
 ```
