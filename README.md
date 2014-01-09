@@ -21,9 +21,9 @@ SDK p/ desenvolvimento de WebApps __HTML5__, __CSS3__ e __JS (AngularJS)__ conec
 
 ## Padrões de codificação do SDK
 
-####### Os 10 mandamentos
+###### Os 10 mandamentos
 
-####### Mandamentos CSS
+###### Mandamentos CSS
 
 1- Width __somente__ com contagem de colunas (__Spans__), sem setagem HardCoded (CSS inline):
 
@@ -94,7 +94,7 @@ MEUS OLHOS BRILHAM
 }
 ```
 
-####### Mandamentos HTML
+###### Mandamentos HTML
 
 4- Usarás as Tags pelo nome até o ponto que for possível
 
@@ -158,7 +158,7 @@ MEUS OLHOS BRILHAM
 ```
 
 
-####### Mandamentos JS
+###### Mandamentos JS
 
 7- Manipularás o estilo dinamicamente __sem__ uso do jQuery:
 
