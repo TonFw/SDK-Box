@@ -1,6 +1,6 @@
 SDK-Box
 =====
-SDK de desenvolvimento de WebApps em __HTML__, __CSS__ e __JS__ com __AngularJS__ conectado a __APIs__ fornecedoras de dados.
+SDK p/ desenvolvimento de WebApps __HTML5__, __CSS3__ e __JS (AngularJS)__ conectado a __APIs__ fornecedoras de dados.
 
 ## Frameworks
 
