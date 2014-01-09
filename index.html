@@ -219,13 +219,13 @@ $('.elemento').removeClass(val);
 
 <pre><code>ERRADO
 editor_cor_letra.js
-SDK-Box_App.controller('editor_cor_letra', function($scope, $http){
+SDKApp.controller('editor_cor_letra', function($scope, $http){
    // Code
 });
 
 SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
 EditorCorLetra.js
-SDK-Box_App.controller('Editor_Cor_Letra', function($scope, $http){
+SDKApp.controller('Editor_Cor_Letra', function($scope, $http){
    // Code
 });
 &lt;body ng-controller="Editor_Cor_Letra"&gt;
@@ -233,7 +233,7 @@ SDK-Box_App.controller('Editor_Cor_Letra', function($scope, $http){
 
 <pre><code>MEUS OLHOS BRILHAM
 editor_cor_letra.js
-SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
+SDKApp.controller('EditorCorLetra', function($scope, $http){
  // Code
 });
 &lt;div ng-controller="EditorCorLetra"&gt;
@@ -248,13 +248,13 @@ var xpto = 'BAD SMELL';
 
 SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
 var xpto = 'BAD SMELL';
-SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
+SDKApp.controller('EditorCorLetra', function($scope, $http){
    var xpto = 'ferrei tudo de vez';
 });
 </code></pre>
 
 <pre><code>MEUS OLHOS BRILHAM
-SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
+SDKApp.controller('EditorCorLetra', function($scope, $http){
    var xptolas_loucas = 'GOD LIKE';
 });
 </code></pre>
@@ -262,18 +262,18 @@ SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
 <p>10- Funções adicionadas ao escopo serão nome1_nome2 e modelos serão CamelCase:</p>
 
 <pre><code>ERRADO
-SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
+SDKApp.controller('EditorCorLetra', function($scope, $http){
    $scope.funcao_marota = function(){ };
 });
 
 SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
-SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
+SDKApp.controller('EditorCorLetra', function($scope, $http){
    $scope.Xpto_Las = 'OLA';
 });
 </code></pre>
 
 <pre><code>MEUS OLHOS BRILHAM
-SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
+SDKApp.controller('EditorCorLetra', function($scope, $http){
  // Definição do modelo deste escopo de Controller
  $scope.FuncaoMarota = funcao_marota();
 
@@ -326,14 +326,14 @@ SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
 
 <p>2- adicionar o controller ao app:</p>
 
-<pre><code>SDK-Box_App.controller('AtividadeCtrl', function ($scope, $http) {
+<pre><code>SDKApp.controller('AtividadeCtrl', function ($scope, $http) {
  // Código aqui
 });
 </code></pre>
 
 <p>3- Adicionará o $scope mediante a necessidade de models:</p>
 
-<pre><code>SDK-Box_App.controller('AtividadeCtrl', function ($scope, $http) {
+<pre><code>SDKApp.controller('AtividadeCtrl', function ($scope, $http) {
  $scope.nome_usuario = function() {
   // Lógica do modelo
  }
