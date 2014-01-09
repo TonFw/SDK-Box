@@ -30,7 +30,7 @@ Work Flow:
   @import "nome_css.css";
 ```
 
-* Adiciona a linha de código ao Style.css
+* Adiciona a linha de código ao Style.css (este só deve conter imports em seu conteúdo)
 
 ```
   @import "nome_elemento/style_geral.css";
