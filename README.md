@@ -2,6 +2,21 @@ PrSDK
 =====
 SDK de desenvolvimento de WebApps em HTML, CSS e JS com AngularJS conectado a APIs fornecedoras de dados.
 
+## Frameworks
+
+* CSS
+  * [Bootstrap 2](http://getbootstrap.com/2.3.2/)
+
+* JavaScript
+  * [AngularJS](http://angularjs.org/)
+  * <del>[jQuery](http://jquery.com/)</del> (Evitar usar, estamos eliminando esta dependência)
+
+* Icon Fonts
+  * [Foundation Icon 3](http://zurb.com/playground/foundation-icon-fonts-3)
+  * [Font Awesome](http://fontawesome.io/icons/)
+  * [Ico moon](http://icomoon.io/)
+  * <del>[Fontello](http://fontello.com/)</del> (Não recomendável utilizar mais icones deste)
+
 
 ## Padrões de codificação do SDK
 
@@ -21,14 +36,20 @@ Work Flow:
   @import "nome_elemento/style_geral.css";
 ```
 
+### HTML
+--------
+
+
 
 ### JS
 --------
+Work Flow:
 
 
 
-
-### HTML
+### AngularJS
 --------
+Work Flow:
+
 
 
