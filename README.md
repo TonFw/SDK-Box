@@ -60,7 +60,7 @@ div {
 ```
 
 ```
-Meus olhos brilham
+MEUS OLHOS BRILHAM
 <div class="container">
  <div id="funcionalidade" class="row">
     <div class="span6"></div>
@@ -112,7 +112,6 @@ val = $('form input')[0].val();
 $('.elemento').removeClass(val);
 ```
 
-
 ```
 MEUS OLHOS BRILHAM
 <input ng-model="val" />
@@ -124,29 +123,24 @@ MEUS OLHOS BRILHAM
 ```
 ERRADO
 editor_cor_letra.js
-
 SDK-Box_App.controller('editor_cor_letra', function($scope, $http){
    // Code
 });
 
 MEUS OLHOS SANGRAM
 EditorCorLetra.js
-
 SDK-Box_App.controller('Editor_Cor_Letra', function($scope, $http){
    // Code
 });
-
 <body ng-controller="EditorCorLetra">
 ```
 
 ```
 MEUS OLHOS BRILHAM
 editor_cor_letra.js
-
 SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
  // Code
 });
-
 <div ng-controller="EditorCorLetra">
  <!-- MarkUp da funcionalidade aqui -->
 </div>
@@ -155,12 +149,48 @@ SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
 6- Encapsularás suas variáveis dentro de seu Controllers e/ou Models <del> __var global__ </del>:
 
 ```
-  var xpto = 'BAD SMELL';
-  
-  SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
-   var xptolas_loucas = 'GOD LIKE';
-  });
+ERRADO
+var xpto = 'BAD SMELL';
+
+MEUS OLHOS SANGRAM
+var xpto = 'BAD SMELL';
+SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
+   var xpto = 'ferrei tudo de vez';
+});
 ```
+
+```
+MEUS OLHOS BRILHAM
+SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
+   var xptolas_loucas = 'GOD LIKE';
+});
+```
+
+7- Funções adicionadas ao escopo serão nome1_nome2 e modelos serão CamelCase:
+
+```
+ERRADO
+SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
+   $scope.funcao_marota = function(){ };
+});
+
+MEUS OLHOS SANGRAM
+SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
+   $scope.Xpto_Las = 'OLA';
+});
+```
+
+```
+MEUS OLHOS BRILHAM
+SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
+ // Definição do modelo deste escopo de Controller
+ $scope.FuncaoMarota = funcao_marota;
+ 
+ // Definição da função
+ function funcao_marota() { };
+});
+```
+
 
 ### CSS
 --------
