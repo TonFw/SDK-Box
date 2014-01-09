@@ -198,11 +198,12 @@ SDKApp.controller('Editor_Cor_Letra', function($scope, $http){
 
 ```
 MEUS OLHOS BRILHAM
+--> Aqui pode ser usado o sufixo Controller ou simplesmente Ctrl, qualquer já ajuda
 editor_cor_letra.js
-SDKApp.controller('EditorCorLetra', function($scope, $http){
+SDKApp.controller('EditorCorLetraController', function($scope, $http){
  // Code
 });
-<div ng-controller="EditorCorLetra">
+<div ng-controller="EditorCorLetraController">
  <!-- MarkUp da funcionalidade aqui -->
 </div>
 ```
