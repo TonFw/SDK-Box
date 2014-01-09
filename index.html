@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Sdk-box by TonGarcia</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Sdk-box</h1>
+        <h2>SDK de desenvolvimento de WebApp (HTML, CSS e JS)</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/TonGarcia/SDK-Box/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/TonGarcia/SDK-Box/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/TonGarcia/SDK-Box" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a name="sdk-box" class="anchor" href="#sdk-box"><span class="octicon octicon-link"></span></a>SDK-Box</h1>
+
+<p>SDK p/ desenvolvimento de WebApps <strong>HTML5</strong>, <strong>CSS3</strong> e <strong>JS (AngularJS)</strong> conectado a <strong>APIs</strong> fornecedoras de dados.</p>
+
+<h2>
+<a name="frameworks" class="anchor" href="#frameworks"><span class="octicon octicon-link"></span></a>Frameworks</h2>
+
+<ul>
+<li>
+<p>CSS</p>
+
+<ul>
+<li><a href="http://getbootstrap.com/2.3.2/">Bootstrap 2</a></li>
+</ul>
+</li>
+<li>
+<p>JavaScript</p>
+
+<ul>
+<li><a href="http://angularjs.org/">AngularJS</a></li>
+<li>
+<a href="http://getbootstrap.com/2.3.2/javascript.html">Bootstrap</a> (jQuery Plugin)</li>
+<li>
+<del><a href="http://jquery.com/">jQuery</a></del> (Este será usado apenas para alimentar o Bootstrap)</li>
+</ul>
+</li>
+<li>
+<p>Icon Fonts</p>
+
+<ul>
+<li><a href="http://zurb.com/playground/foundation-icon-fonts-3">Foundation Icon 3</a></li>
+<li><a href="http://fontawesome.io/icons/">Font Awesome</a></li>
+<li><a href="http://icomoon.io/">Ico moon</a></li>
+<li>
+<del><a href="http://fontello.com/">Fontello</a></del> (Não recomendável utilizar mais icones deste)</li>
+</ul>
+</li>
+</ul><p><br><br></p>
+
+<h2>
+<a name="padr%C3%B5es-de-codifica%C3%A7%C3%A3o-do-sdk" class="anchor" href="#padr%C3%B5es-de-codifica%C3%A7%C3%A3o-do-sdk"><span class="octicon octicon-link"></span></a>Padrões de codificação do SDK</h2>
+
+<h5>
+<a name="os-10-mandamentos" class="anchor" href="#os-10-mandamentos"><span class="octicon octicon-link"></span></a>Os 10 mandamentos</h5>
+
+<hr><h5>
+<a name="mandamentos-css" class="anchor" href="#mandamentos-css"><span class="octicon octicon-link"></span></a>Mandamentos CSS</h5>
+
+<p>1- Width <strong>somente</strong> com contagem de colunas (<strong>Spans</strong>), sem setagem HardCoded (CSS inline):</p>
+
+<pre><code>ERRADO
+div {
+ width: 2px;
+}
+
+SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
+&lt;div style="width: 100%"&gt;
+</code></pre>
+
+<pre><code>MEUS OLHOS BRILHAM
+&lt;div class="span3"&gt;
+ &lt;span&gt;&lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>2- Sempre removerás margins dos Spans usarando Row, p/ elementos na mesma linha:</p>
+
+<pre><code>ERRADO
+#funcionalidade div {
+ margin: 0;
+}
+
+SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
+div {
+ margin: 0;
+}
+</code></pre>
+
+<pre><code>MEUS OLHOS BRILHAM
+&lt;div class="container"&gt;
+ &lt;div id="funcionalidade" class="row"&gt;
+    &lt;div class="span6"&gt;&lt;/div&gt;
+    &lt;div class="span6"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>3- Sempre selecionarás o elemento para estilo acoplando-o a seu elemento pai:</p>
+
+<pre><code>ERRADO
+#funcionalidade div {
+ /* estilo */
+}
+
+SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
+div {
+ /* estilo */
+}
+</code></pre>
+
+<pre><code>MEUS OLHOS BRILHAM
+&lt;div id="elemento_pai"&gt;
+ &lt;span class="elemento_funcional"&gt;&lt;/span&gt;
+&lt;/div&gt;
+
+#elemento_pai span.elemento_funcional {
+ /* estilo */
+}
+</code></pre>
+
+<h5>
+<a name="mandamentos-html" class="anchor" href="#mandamentos-html"><span class="octicon octicon-link"></span></a>Mandamentos HTML</h5>
+
+<p>4- Usarás as Tags pelo nome até o ponto que for possível</p>
+
+<pre><code>ERRADO
+&lt;div class="header"&gt;
+ &lt;div class="nav"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="artigo"&gt;&lt;/div&gt;
+
+SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
+&lt;div id="header"&gt;&lt;/div&gt;
+&lt;div id="nav"&gt;&lt;/div&gt;
+&lt;div id="artigo"&gt;&lt;/div&gt;
+</code></pre>
+
+<pre><code>MEUS OLHOS BRILHAM
+&lt;header&gt;
+ &lt;nav&gt;&lt;/nav&gt;
+&lt;/header&gt;
+&lt;article&gt;&lt;/article&gt;
+</code></pre>
+
+<p>5- Não utilizarás atributos das tags para manipular estilo</p>
+
+<pre><code>ERRADO &amp;&amp; SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
+&lt;div bgcolor="black"&gt;&lt;/div&gt;
+</code></pre>
+
+<pre><code>MEUS OLHOS BRILHAM
+div.foo {
+ background: black;
+}
+
+&lt;div class="foo"&gt;&lt;/div&gt;
+</code></pre>
+
+<p>6- Respeitarás as hierarquias entre as tags</p>
+
+<pre><code>ERRADO &amp;&amp; SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
+&lt;h2&gt; 
+ &lt;h1&gt;&lt;/h1&gt; 
+&lt;/h2&gt;
+
+SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
+&lt;span&gt;
+ &lt;div&gt;&lt;/div&gt;
+&lt;/span&gt;
+</code></pre>
+
+<pre><code>MEUS OLHOS BRILHAM
+&lt;div&gt;
+ &lt;span&gt;&lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h5>
+<a name="mandamentos-js" class="anchor" href="#mandamentos-js"><span class="octicon octicon-link"></span></a>Mandamentos JS</h5>
+
+<p>7- Manipularás o estilo dinamicamente <strong>sem</strong> uso do jQuery:</p>
+
+<pre><code>ERRADO
+val = $('#input').val();
+$('.elemento').addClass(val);
+
+SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
+val = $('form input')[0].val();
+$('.elemento').removeClass(val);
+</code></pre>
+
+<pre><code>MEUS OLHOS BRILHAM
+&lt;input ng-model="val" /&gt;
+&lt;span class="elemento {{ val }}"&gt;  &lt;/span&gt;
+</code></pre>
+
+<p>8- Sempre criará seu AngularJS Controller no arquivo de mesmo nome e setá-lo na div mãe da funcionalidade:</p>
+
+<pre><code>ERRADO
+editor_cor_letra.js
+SDK-Box_App.controller('editor_cor_letra', function($scope, $http){
+   // Code
+});
+
+SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
+EditorCorLetra.js
+SDK-Box_App.controller('Editor_Cor_Letra', function($scope, $http){
+   // Code
+});
+&lt;body ng-controller="Editor_Cor_Letra"&gt;
+</code></pre>
+
+<pre><code>MEUS OLHOS BRILHAM
+editor_cor_letra.js
+SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
+ // Code
+});
+&lt;div ng-controller="EditorCorLetra"&gt;
+ &lt;!-- MarkUp da funcionalidade aqui --&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>9- Encapsularás suas variáveis dentro de seu Controllers e/ou Models <del> <strong>var global</strong> </del>:</p>
+
+<pre><code>ERRADO
+var xpto = 'BAD SMELL';
+
+SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
+var xpto = 'BAD SMELL';
+SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
+   var xpto = 'ferrei tudo de vez';
+});
+</code></pre>
+
+<pre><code>MEUS OLHOS BRILHAM
+SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
+   var xptolas_loucas = 'GOD LIKE';
+});
+</code></pre>
+
+<p>10- Funções adicionadas ao escopo serão nome1_nome2 e modelos serão CamelCase:</p>
+
+<pre><code>ERRADO
+SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
+   $scope.funcao_marota = function(){ };
+});
+
+SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
+SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
+   $scope.Xpto_Las = 'OLA';
+});
+</code></pre>
+
+<pre><code>MEUS OLHOS BRILHAM
+SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
+ // Definição do modelo deste escopo de Controller
+ $scope.FuncaoMarota = funcao_marota();
+
+ // Definição da função
+ function funcao_marota() { };
+});
+</code></pre>
+
+<h3>
+<a name="css" class="anchor" href="#css"><span class="octicon octicon-link"></span></a>CSS</h3>
+
+<hr><p>Work Flow:</p>
+
+<ul>
+<li>Cria a pasta com o nome da funcionalidade/elemento a ser desenvolvida(o)</li>
+<li>Cria style_geral.css, dentro do pasta que, importa os outros CSS deste dado elemento/funcionaliade</li>
+</ul><pre><code>  @import "nome_css.css";
+</code></pre>
+
+<ul>
+<li>Adiciona a linha de código ao Style.css (este só deve conter imports em seu conteúdo)</li>
+</ul><pre><code>  @import "nome_elemento/style_geral.css";
+</code></pre>
+
+<h3>
+<a name="html" class="anchor" href="#html"><span class="octicon octicon-link"></span></a>HTML</h3>
+
+<hr><p>Work Flow:</p>
+
+<p>1- Iniciar sempre colocando uma nova classe Row, <strong>se for para uma nova linha</strong>;
+2- Colocar ID na DIV, ou outro elemento mais plausível, que inicia a funcionalidade</p>
+
+<pre><code>&lt;div id="funcionalidade_tal" class="row" ng-controller="FuncionalidadeTal"&gt;
+ &lt;!-- MarkUp funcionalidade --&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>3- colocar o tamanho dos componentes em função dos spans, vide <a href="http://getbootstrap.com/2.3.2/scaffolding.html#fluidGridSystem">GridSystem</a></p>
+
+<h3>
+<a name="angularjs" class="anchor" href="#angularjs"><span class="octicon octicon-link"></span></a>AngularJS</h3>
+
+<hr><p>Work Flow:
+1- por na div mãe da funcionalidade o Controller:</p>
+
+<pre><code>&lt;div ng-controller="AtividadeCtrl"&gt;
+ &lt;!-- markup funcionalidade aqui --&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>2- adicionar o controller ao app:</p>
+
+<pre><code>SDK-Box_App.controller('AtividadeCtrl', function ($scope, $http) {
+ // Código aqui
+});
+</code></pre>
+
+<p>3- Adicionará o $scope mediante a necessidade de models:</p>
+
+<pre><code>SDK-Box_App.controller('AtividadeCtrl', function ($scope, $http) {
+ $scope.nome_usuario = function() {
+  // Lógica do modelo
+ }
+});
+</code></pre>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
