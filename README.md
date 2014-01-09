@@ -184,13 +184,13 @@ MEUS OLHOS BRILHAM
 ```
 ERRADO
 editor_cor_letra.js
-SDK-Box_App.controller('editor_cor_letra', function($scope, $http){
+SDKApp.controller('editor_cor_letra', function($scope, $http){
    // Code
 });
 
 SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
 EditorCorLetra.js
-SDK-Box_App.controller('Editor_Cor_Letra', function($scope, $http){
+SDKApp.controller('Editor_Cor_Letra', function($scope, $http){
    // Code
 });
 <body ng-controller="Editor_Cor_Letra">
@@ -199,7 +199,7 @@ SDK-Box_App.controller('Editor_Cor_Letra', function($scope, $http){
 ```
 MEUS OLHOS BRILHAM
 editor_cor_letra.js
-SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
+SDKApp.controller('EditorCorLetra', function($scope, $http){
  // Code
 });
 <div ng-controller="EditorCorLetra">
@@ -215,14 +215,14 @@ var xpto = 'BAD SMELL';
 
 SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
 var xpto = 'BAD SMELL';
-SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
+SDKApp.controller('EditorCorLetra', function($scope, $http){
    var xpto = 'ferrei tudo de vez';
 });
 ```
 
 ```
 MEUS OLHOS BRILHAM
-SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
+SDKApp.controller('EditorCorLetra', function($scope, $http){
    var xptolas_loucas = 'GOD LIKE';
 });
 ```
@@ -231,19 +231,19 @@ SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
 
 ```
 ERRADO
-SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
+SDKApp.controller('EditorCorLetra', function($scope, $http){
    $scope.funcao_marota = function(){ };
 });
 
 SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
-SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
+SDKApp.controller('EditorCorLetra', function($scope, $http){
    $scope.Xpto_Las = 'OLA';
 });
 ```
 
 ```
 MEUS OLHOS BRILHAM
-SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
+SDKApp.controller('EditorCorLetra', function($scope, $http){
  // Definição do modelo deste escopo de Controller
  $scope.FuncaoMarota = funcao_marota();
  
@@ -297,7 +297,7 @@ Work Flow:
 2- adicionar o controller ao app:
 
 ```
-SDK-Box_App.controller('AtividadeCtrl', function ($scope, $http) {
+SDKApp.controller('AtividadeCtrl', function ($scope, $http) {
  // Código aqui
 });
 ```
@@ -305,7 +305,7 @@ SDK-Box_App.controller('AtividadeCtrl', function ($scope, $http) {
 3- Adicionará o $scope mediante a necessidade de models:
 
 ```
-SDK-Box_App.controller('AtividadeCtrl', function ($scope, $http) {
+SDKApp.controller('AtividadeCtrl', function ($scope, $http) {
  $scope.nome_usuario = function() {
   // Lógica do modelo
  }
