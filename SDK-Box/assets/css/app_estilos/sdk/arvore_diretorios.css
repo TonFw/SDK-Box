@@ -1,0 +1,105 @@
+#arvore_diretorios {
+    cursor: default;
+    background: #effdff;
+}
+
+#arvore_diretorios header {
+    cursor: default;
+    padding: 1% 5% .1%;
+    background: #d9f4f8;
+}
+
+#arvore_diretorios header > div {
+    margin-top: -2%;
+}
+
+#arvore_diretorios .fa-folder, #arvore_diretorios .fa-folder-open, 
+#arvore_diretorios .fa-folder-o,  #arvore_diretorios .fa-folder-open-o {
+    color: orange;
+}
+
+#frame_diretorios {
+    background: white;
+    margin: 0 5% 3%;
+    border: 1px solid #006dcc;
+    padding: 2%;
+}
+
+#frame_diretorios .pasta ul i {
+    font-size: 1.3em
+}
+
+#arvore_diretorios .pasta {
+    cursor: pointer;
+}
+
+#arvore_diretorios .pasta:hover {
+    cursor: pointer;
+}
+
+#frame_diretorios.pasta span {
+    margin: 2%;
+}
+
+#ops_ger_arqs_dirs {
+    float: right;
+    width: 44%;
+    font-size: 1.6em;
+}
+
+#ops_ger_arqs_dirs span .fi-x {
+    font-size: .5em;
+    margin-left: -10%;
+    color: #effdff;
+}
+
+#ops_ger_arqs_dirs .fi-page-add, 
+#ops_ger_arqs_dirs .fi-folder-add,
+#ops_ger_arqs_dirs .fa-cloud-upload {
+    color: green;
+}
+
+#ops_ger_arqs_dirs .fi-page-delete,
+#ops_ger_arqs_dirs .fi-folder {
+    color: #dd3e0f;
+}
+
+#ops_ger_arqs_dirs .fa-cloud-download {
+    color: blue;
+}
+
+#ops_ger_arqs_dirs > i,
+#ops_ger_arqs_dirs > span {
+    cursor: pointer;
+}
+
+#frame_diretorios ul {
+    list-style: none;
+}
+
+#frame_diretorios > ul {
+    margin: 0;
+}
+
+#frame_diretorios .html {
+    color: #dd3e0f;
+}
+
+#frame_diretorios .css {
+    color: green;
+}
+
+#frame_diretorios .js {
+    color: #dc9110;
+}
+
+#codigo_fonte {
+    padding: 0 2%;
+}
+
+#codigo_fonte textarea {
+    background: black;
+    color: white;
+    width: 94.3%;
+    min-height: 450px;
+}

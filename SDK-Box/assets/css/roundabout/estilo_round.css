@@ -1,0 +1,18 @@
+.roundabout-holder {
+    list-style: none;
+    padding: 0;
+    margin: 20% auto;
+    height: 1em;
+    width: 65em;
+}
+.roundabout-moveable-item {
+    height: 18.78em;
+    width: 25.03em;
+    cursor: pointer;
+    background-color: #111;
+    border: 1px #fff;
+}
+.roundabout-in-focus {
+    cursor: auto;
+}
+

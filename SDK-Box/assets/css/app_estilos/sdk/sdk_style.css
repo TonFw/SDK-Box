@@ -1,0 +1,10 @@
+@import "arvore_diretorios.css";
+@import "arquivo_editor.css";
+
+#sdk_container {
+    margin-top: 1.5%;
+}
+
+#sdk_container header{
+    margin-bottom: 2%;
+}

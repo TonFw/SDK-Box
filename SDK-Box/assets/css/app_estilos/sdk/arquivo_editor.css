@@ -1,0 +1,11 @@
+#arquivo_editor {
+    background: #fef9ee;
+}
+
+#arquivo_editor header {
+    cursor: default;
+}
+
+#arquivo_editor .breadcrumb {
+    background: #f6efdd;
+}

@@ -1,0 +1,1 @@
+var ProumoApp = angular.module('ProumoApp', []);
