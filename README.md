@@ -1,6 +1,8 @@
 SDK-Box
 =====
-SDK p/ desenvolvimento de WebApps __HTML5__, __CSS3__ e __JS (AngularJS)__ conectado a __APIs__ fornecedoras de dados.
+IDE criada para desenvolvimento rápido e fácil direto do Browser (__Safari__, __Chrome__ ou __FireFox__), com interfaces de fácil manipulação para criação de Addons/Plugins e também de comunicação com __APIs__ (__GitHub__, __Gravatar__, __Twitter__, __Facebook__).
+
+Resumo: IDE de propósito geral que permite fácil criação de plugin e addon e que roda em browsers, que permitam App, e que tem uma fácil interface de comunicação com APIs o que o torna também um SDK.
 
 ## Frameworks
 
