@@ -270,18 +270,43 @@ Work Flow:
 
 ### HTML
 --------
-
-
-
-### JS
---------
 Work Flow:
 
+1- Iniciar sempre colocando uma nova classe Row, __se for para uma nova linha__;
+2- Colocar ID na DIV, ou outro elemento mais plausível, que inicia a funcionalidade
+```
+<div id="funcionalidade_tal" class="row" ng-controller="FuncionalidadeTal">
+ <!-- MarkUp funcionalidade -->
+</div>
+```
+3- colocar o tamanho dos componentes em função dos spans, vide [GridSystem](http://getbootstrap.com/2.3.2/scaffolding.html#fluidGridSystem)
 
 
 ### AngularJS
 --------
 Work Flow:
+1- por na div mãe da funcionalidade o Controller:
 
+```
+<div ng-controller="AtividadeCtrl">
+ <!-- markup funcionalidade aqui -->
+</div>
+```
 
+2- adicionar o controller ao app:
 
+```
+SDK-Box_App.controller('AtividadeCtrl', function ($scope, $http) {
+ // Código aqui
+});
+```
+
+3- Adicionará o $scope mediante a necessidade de models:
+
+```
+SDK-Box_App.controller('AtividadeCtrl', function ($scope, $http) {
+ $scope.nome_usuario = function() {
+  // Lógica do modelo
+ }
+});
+```
