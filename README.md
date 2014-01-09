@@ -33,7 +33,6 @@ div {
  width: 2px;
 }
 
-
 MEU OLHOS SANGRAM
 <div style="width: 100%">
 ```
@@ -90,7 +89,6 @@ MEUS OLHOS BRILHAM
  <span class="elemento_funcional"></span>
 </div>
 
-CSS
 #elemento_pai span.elemento_funcional {
  /* estilo */
 }
@@ -105,10 +103,20 @@ CSS
 4- Manipularás o estilo dinamicamente __sem__ uso do jQuery:
 
 ```
-  HTML
-  <div class="{{ estilo.estado }}">
-   <span></span>
-  </div>
+ERRADO
+val = $('#input').val();
+$('.elemento').addClass(val);
+
+MEUS OLHOS SANGRAM
+val = $('form input')[0].val();
+$('.elemento').removeClass(val);
+```
+
+
+```
+MEUS OLHOS BRILHAM
+<input ng-model="val" />
+<span class="elemento {{ val }}">  </span>
 ```
 
 5- Sempre criará seu AngularJS Controller no arquivo de mesmo nome e setá-lo na div mãe da funcionalidade:
