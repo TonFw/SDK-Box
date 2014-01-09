@@ -33,7 +33,7 @@ div {
  width: 2px;
 }
 
-SEU CÓDIGO É TÃO BOM QUE ME DEU CÂNCER
+SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
 <div style="width: 100%">
 ```
 
@@ -53,7 +53,7 @@ ERRADO
  margin: 0;
 }
 
-SEU CÓDIGO É TÃO BOM QUE ME DEU CÂNCER
+SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
 div {
  margin: 0;
 }
@@ -77,7 +77,7 @@ ERRADO
  /* estilo */
 }
 
-SEU CÓDIGO É TÃO BOM QUE ME DEU CÂNCER
+SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
 div {
  /* estilo */
 }
@@ -112,7 +112,7 @@ ERRADO
 val = $('#input').val();
 $('.elemento').addClass(val);
 
-SEU CÓDIGO É TÃO BOM QUE ME DEU CÂNCER
+SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
 val = $('form input')[0].val();
 $('.elemento').removeClass(val);
 ```
@@ -132,7 +132,7 @@ SDK-Box_App.controller('editor_cor_letra', function($scope, $http){
    // Code
 });
 
-SEU CÓDIGO É TÃO BOM QUE ME DEU CÂNCER
+SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
 EditorCorLetra.js
 SDK-Box_App.controller('Editor_Cor_Letra', function($scope, $http){
    // Code
@@ -157,7 +157,7 @@ SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
 ERRADO
 var xpto = 'BAD SMELL';
 
-SEU CÓDIGO É TÃO BOM QUE ME DEU CÂNCER
+SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
 var xpto = 'BAD SMELL';
 SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
    var xpto = 'ferrei tudo de vez';
@@ -179,7 +179,7 @@ SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
    $scope.funcao_marota = function(){ };
 });
 
-SEU CÓDIGO É TÃO BOM QUE ME DEU CÂNCER
+SEU CÓDIGO É TÃO BOM QUE ME DEU ÚLCERA 
 SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
    $scope.Xpto_Las = 'OLA';
 });
