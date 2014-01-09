@@ -184,7 +184,7 @@ SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
 MEUS OLHOS BRILHAM
 SDK-Box_App.controller('EditorCorLetra', function($scope, $http){
  // Definição do modelo deste escopo de Controller
- $scope.FuncaoMarota = funcao_marota;
+ $scope.FuncaoMarota = funcao_marota();
  
  // Definição da função
  function funcao_marota() { };
