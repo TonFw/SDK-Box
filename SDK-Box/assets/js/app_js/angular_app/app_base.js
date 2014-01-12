@@ -1,1 +1,1 @@
-var ProumoApp = angular.module('ProumoApp', []);
+var SDKApp = angular.module('SDKApp', ['ngSanitize']);
